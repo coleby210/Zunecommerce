@@ -12,4 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
+//= require jquery.smartmenus
+//= require jquery.smartmenus.bootstrap
+//= require jquery.simpleGallery
+//= require jquery.simpleLens
+//= require slick
+//= require nouislider
+//= require custom
 //= require_tree .
