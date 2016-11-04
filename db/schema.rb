@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 20161104231500) do
     t.boolean "banner"
     t.boolean "testimonials"
     t.boolean "newsletter"
+    t.integer "setting_id"
   end
 
   create_table "navigation_links", force: :cascade do |t|
@@ -86,15 +87,14 @@ ActiveRecord::Schema.define(version: 20161104231500) do
   end
 
   create_table "settings", force: :cascade do |t|
-    t.string  "phone"
-    t.string  "address"
-    t.string  "email"
-    t.string  "copyright"
-    t.string  "web_title"
-    t.string  "site_name_first"
-    t.string  "site_name_second"
-    t.string  "site_tagline"
-    t.integer "homepage_id"
+    t.string "phone"
+    t.string "address"
+    t.string "email"
+    t.string "copyright"
+    t.string "web_title"
+    t.string "site_name_first"
+    t.string "site_name_second"
+    t.string "site_tagline"
   end
 
   create_table "sliders", force: :cascade do |t|

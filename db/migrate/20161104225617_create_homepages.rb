@@ -8,6 +8,7 @@ class CreateHomepages < ActiveRecord::Migration[5.0]
       t.boolean :banner
       t.boolean :testimonials
       t.boolean :newsletter
+      t.integer :setting_id
     end
   end
 end
