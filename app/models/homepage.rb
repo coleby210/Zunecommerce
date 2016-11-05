@@ -4,4 +4,5 @@ class Homepage < ApplicationRecord
   has_many :promos
   has_many :testimonials
   has_one :newsletter
+  has_many :banners
 end
