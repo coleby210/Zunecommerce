@@ -1,4 +1,6 @@
-<%= render partial: "sliders", layout: false %>
+<% if @home["sliders"] %>
+  <%= render partial: "sliders", layout: false %>
+<% end %>
 <%= render partial: "promos", layout: false %>
 <%= render partial: "featured_products", layout: false %>
 <%= render partial: "banner", layout: false %>
