@@ -68,9 +68,9 @@ Testimonial.create(picture: "http://www.markups.io/items/dailyShop/img/testimoni
 Newsletter.create(title: "Subscribe to our Newsletter", description: "We have tons of goodies", button_text: "Subscribe", homepage_id: 1)
 
 #Banners
-Banner.create(symbol: "truck", title: "Free Shipping", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.")
-Banner.create(symbol: "clock-o", title: "30 Days Money Back", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.")
-Banner.create(symbol: "phone", title: "24/7 Support", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.")
+Banner.create(symbol: "truck", title: "Free Shipping", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.", homepage_id: 1)
+Banner.create(symbol: "clock-o", title: "30 Days Money Back", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.", homepage_id: 1)
+Banner.create(symbol: "phone", title: "24/7 Support", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.", homepage_id: 1)
 
 #Navigation
 NavigationLink.create(title: "Home", link: "/")
