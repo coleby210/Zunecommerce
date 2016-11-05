@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
     @first_promo = @home.promos.first
     @featured = Category.where(featured: true)
     @banners = @home.banners
+    @testimonials = @home.testimonials
 
     @options = ["sliders", "promos", "featured_products", "banners", "testimonials", "newsletter"]
     render "/index"
