@@ -1,0 +1,21 @@
+<!-- Support section -->
+<section id="aa-support">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-support-area">
+          <% @banners.each do |banner| %>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="aa-support-single">
+              <span class="fa fa-<%= banner.symbol %>"></span>
+              <h4><%= banner.title %></h4>
+              <p><%= banner.description %></p>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / Support section -->

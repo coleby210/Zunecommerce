@@ -4,11 +4,11 @@
     <div class="row">
       <div class="col-md-12">
         <div class="aa-subscribe-area">
-          <h3>Subscribe to our Newsletter </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, velit!</p>
+          <h3><%= @newsletter.title %></h3>
+          <p><%= @newsletter.description %></p>
           <form action="" class="aa-subscribe-form">
             <input type="email" name="" id="" placeholder="Enter your Email">
-            <input type="submit" value="Subscribe">
+            <input type="submit" value="<%= @newsletter.button_text %>">
           </form>
         </div>
       </div>

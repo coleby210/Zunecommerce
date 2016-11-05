@@ -4,28 +4,19 @@
     <div id="sequence" class="seq">
        <ul class="seq-canvas">
           <!-- single slide item -->
+          <% @sliders.each do |slider| %>
           <li>
             <div class="seq-model">
-              <img data-seq src="<%= image_path("slider/1.jpg") %>" alt="Men slide img" />
+              <img data-seq src="<%= slider.bg_img %>" alt="<%= slider.title %>" />
             </div>
             <div class="seq-title">
-             <span data-seq>Tagline</span>
-              <h2 data-seq>Title</h2>
-              <p data-seq>Description goes here.</p>
-              <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Button Text</a>
+             <span data-seq><%= slider.tagline %></span>
+              <h2 data-seq><%= slider.title %></h2>
+              <p data-seq><%= slider.description %></p>
+              <a data-seq href="<%= slider.button_link %>" class="aa-shop-now-btn aa-secondary-btn"><%= slider.button_text %></a>
             </div>
           </li>
-          <li>
-            <div class="seq-model">
-              <img data-seq src="<%= image_path("slider/1.jpg") %>" alt="Men slide img" />
-            </div>
-            <div class="seq-title">
-             <span data-seq>Tagline</span>
-              <h2 data-seq>Title</h2>
-              <p data-seq>Description goes here.</p>
-              <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Button Text</a>
-            </div>
-          </li>
+          <% end %>
         </ul>
       <!-- slider navigation btn -->
 

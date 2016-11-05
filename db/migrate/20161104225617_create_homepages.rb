@@ -4,7 +4,7 @@ class CreateHomepages < ActiveRecord::Migration[5.0]
       t.string :name
       t.boolean :sliders, default: true
       t.boolean :promos, default: true
-      t.boolean :featured_items, default: true
+      t.boolean :featured_products, default: true
       t.boolean :banners, default: true
       t.boolean :testimonials, default: true
       t.boolean :newsletter, default: true
