@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
     @sliders = @home.sliders
     @promos = @home.promos.where.not(id: 1)
     @first_promo = @home.promos.first
+    @featured = Category.where(featured: true)
 
     @options = ["sliders", "promos", "featured_products", "banners", "testimonials", "newsletter"]
     render "/index"
