@@ -1,8 +1,5 @@
-<% if @home["sliders"] %>
-  <%= render partial: "sliders", layout: false %>
+<% @options.each do |option| %>
+  <% if @home[option] %>
+    <%= render partial: option, layout: false %>
+  <% end %>
 <% end %>
-<%= render partial: "promos", layout: false %>
-<%= render partial: "featured_products", layout: false %>
-<%= render partial: "banner", layout: false %>
-<%= render partial: "testimonials", layout: false %>
-<%= render partial: "newsletter", layout: false %>

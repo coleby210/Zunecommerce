@@ -41,12 +41,12 @@ ActiveRecord::Schema.define(version: 20161104231500) do
 
   create_table "homepages", force: :cascade do |t|
     t.string  "name"
-    t.boolean "sliders",        default: true
-    t.boolean "promos",         default: true
-    t.boolean "featured_items", default: true
-    t.boolean "banners",        default: true
-    t.boolean "testimonials",   default: true
-    t.boolean "newsletter",     default: true
+    t.boolean "sliders",           default: true
+    t.boolean "promos",            default: true
+    t.boolean "featured_products", default: true
+    t.boolean "banners",           default: true
+    t.boolean "testimonials",      default: true
+    t.boolean "newsletter",        default: true
     t.integer "setting_id"
   end
 
