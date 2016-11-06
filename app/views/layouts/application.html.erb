@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Zunecommerce</title>
+    <title><%= Setting.first.web_title %></title>
     <%= csrf_meta_tags %>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
@@ -21,11 +21,11 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
   <body>
-    <%= render partial: "layouts/header", layout: false %>
+    <%= render partial: "layouts/header", layout: false, locals: {settings: Setting.first} %>
 
     <%= yield %>
 
-    <%= render partial: "layouts/footer", layout: false %>
+    <%= render partial: "layouts/footer", layout: false, locals: {settings: Setting.first} %>
 
     <%= javascript_include_tag 'application' %>
   </body>
