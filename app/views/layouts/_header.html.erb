@@ -20,18 +20,18 @@
                 <div class="dropdown">
                   <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <i class="fa fa-usd"></i>USD
-                    <span class="caret"></span>
+                    <!-- <span class="caret"></span> -->
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li><a href="#"><i class="fa fa-euro"></i>EURO</a></li>
                     <li><a href="#"><i class="fa fa-jpy"></i>YEN</a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
               <!-- / currency -->
               <!-- start cellphone -->
               <div class="cellphone hidden-xs">
-                <p><span class="fa fa-phone"></span>00-62-658-658</p>
+                <p><span class="fa fa-phone"></span><%= settings.phone %></p>
               </div>
               <!-- / cellphone -->
             </div>
@@ -62,7 +62,7 @@
               <!-- Text based logo -->
               <a href="index.html">
                 <span class="fa fa-shopping-cart"></span>
-                <p>Zune<strong>commerce</strong> <span>Selling Simplified</span></p>
+                <p><%= settings.site_name_first %><strong><%= settings.site_name_second %></strong> <span><%= settings.site_tagline %></span></p>
               </a>
               <!-- img based logo -->
               <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
@@ -139,8 +139,9 @@
         <div class="navbar-collapse collapse">
           <!-- Left nav -->
           <ul class="nav navbar-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="#">Category Example <span class="caret"></span></a>
+            <% NavigationLink.all.each do |nav| %>
+            <li><a href="<%= nav.link %>"><%= nav.title %></a></li>
+<!--             <li><a href="#">Category Example <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Sub-Category Example</a></li>
                 <li><a href="#">DBL DropDown<span class="caret"></span></a>
@@ -149,7 +150,8 @@
                   </ul>
                 </li>
               </ul>
-            </li>
+            </li> -->
+            <% end %>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
