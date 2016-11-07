@@ -11,6 +11,10 @@ Ecommerce Project
 5. Testimonials
 6. Newsletter Subscription
 
+###Home To-Do
+1. Settings need Social Media Links
+2. Settings need payment gateways accepted
+
 ###Stretch Goals:
 1. Ability to Change Site-Wide Currency
 2. Blog Management
